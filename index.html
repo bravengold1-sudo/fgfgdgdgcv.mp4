@@ -71,17 +71,10 @@
 	</a>
 	<br>
     <div class="video-wrapper">
-       <video id="vid" muted playsinline controls>
+       <video autoplay muted playsinline controls>
   <source src="https://cdn.videy.co/70nCYLMc1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
-
-<script>
-  const v = document.getElementById("vid");
-  document.body.addEventListener("click", () => {
-    v.play();
-    if (v.requestFullscreen) v.requestFullscreen();
-  }, { once: true });
-</script>
 
  	<br>
 <a href="https://www.facebook.com/groups/1056925493300944" target="_blank">
