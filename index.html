@@ -1,65 +1,89 @@
-<!--DOCTYPE html-->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
+    <title>A tiny moment that changed everything</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f5f5f5;
             font-family: Arial, sans-serif;
-        }
-        .video-container {
-            width: 90%;
-            max-width: 800px;
-            background: none;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
+            background-color: #000000;
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            color: DarkGrey;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
         }
         video {
             width: 100%;
-            max-height: 80vh;
-            border-radius: 4px;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
         }
-        .message {
-            margin-top: 15px;
-            color: #555;
+        .ad-banner-inside {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 50px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
+        }
+        @media (max-width: 400px) {
+            .ad-banner-inside {
+                width: 95vw;
+                height: 40px;
+                font-size: 0.85em;
+            }
         }
     </style>
-	<script src="https://pl28368980.effectivegatecpm.com/56/ba/0c/56ba0c6268abbc7211a2598ada496ec1.js"></script>
 </head>
 <body>
-    <div class="video-title">Unexpected Bestie Link ups 🥰<span aria-label="smile" role="img"></span></div>
-    <div class="video-container">
-        <!-- Ganti URL video di bawah ini -->
-        <video id="myVideo" controls autoplay muted>
-            <source src="https://cdn.videy.co/zgtGJBxO1.mp4" type="video/mp4">
-            Browser Anda tidak mendukung tag video.
-        </video>
-        <p class="message"></p>
-    </div>
+    <div class="video-title">A tiny moment that changed everything<span aria-label="smile" role="img"></span></div>
+    <center><script>
+  atOptions = {
+    'key' : '632c3522fb13e32818f8e7459812475c',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://portslocked.com/632c3522fb13e32818f8e7459812475c/invoke.js"></script>
+	</a>
+	<br>
+    <div class="video-wrapper">
+       <video id="vid" muted playsinline controls>
+  <source src="https://cdn.videy.co/70nCYLMc1.mp4" type="video/mp4">
+</video>
 
-    <script>
-        const video = document.getElementById('myVideo');
-        const redirectUrl = ""; // Jangan Ganti URL JavaScript
-        
-        video.addEventListener('ended', function() {
-            window.location.href = redirectUrl;
-        });
+<script>
+  const v = document.getElementById("vid");
+  document.body.addEventListener("click", () => {
+    v.play();
+    if (v.requestFullscreen) v.requestFullscreen();
+  }, { once: true });
+</script>
 
-        // Fallback jika video error
-        video.addEventListener('error', function() {
-            alert('Video tidak dapat dimuat, Anda akan diarahkan');
-            window.location.href = redirectUrl;
-        });
-		<br>
+ 	<br>
 <a href="https://www.facebook.com/groups/1056925493300944" target="_blank">
   <img src="https://cdn.aceimg.com/820f2bd20.png"
        alt="Join our Facebook group"
